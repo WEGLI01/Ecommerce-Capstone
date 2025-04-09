@@ -32,4 +32,4 @@ Assumptions:
 Free tier of cloud offerings will be suitable for the needs of the project.
 Project scope will remain unchanged. 
 The project will be achievable within the specified timeframe.
-All resources will be available through the chosen cloud provider. 
+All resources will be available through the chosen cloud provider.
