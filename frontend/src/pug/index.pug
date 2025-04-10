@@ -1,0 +1,244 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title CapstoneCommerce
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body
+
+        // Navigation
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='#!') Start Bootstrap
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.me-auto.mb-2.mb-lg-0.ms-lg-4
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='#!') Home
+                        li.nav-item
+                            a.nav-link(href='#!') About
+                        li.nav-item.dropdown
+                            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                | Shop
+                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                                li
+                                    a.dropdown-item(href='#!') All Products
+                                li
+                                    hr.dropdown-divider
+                                li
+                                    a.dropdown-item(href='#!') Popular Items
+                                li
+                                    a.dropdown-item(href='#!') New Arrivals
+                    form.d-flex
+                        button.btn.btn-outline-dark(type='submit')
+                            i.bi-cart-fill.me-1
+                            | Cart
+                            span.badge.bg-dark.text-white.ms-1.rounded-pill 0
+
+        // Header
+        header.bg-dark.py-5
+            .container.px-4.px-lg-5.my-5
+                .text-center.text-white
+                    h1.display-4.fw-bolder Shop in style
+                    p.lead.fw-normal.text-white-50.mb-0 With this shop homepage template
+
+        // Section
+        section.py-5
+            .container.px-4.px-lg-5.mt-5
+                .row.gx-4.gx-lg-5.row-cols-2.row-cols-md-3.row-cols-xl-4.justify-content-center
+                    .col.mb-5
+                        .card.h-100
+                            // Product image
+                            img.card-img-top(src='https://images.unsplash.com/photo-1737065175923-7b05466a2c1a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Sourdough
+                                    // Product price
+                                    $5.99
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') View options
+                    .col.mb-5
+                        .card.h-100
+                            // Sale badge
+                            .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
+                            // Product image
+                            img.card-img-top(src='https://i.pinimg.com/236x/da/4f/45/da4f45047a42ab9039bffc71ec40999c.jpg', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Sour Patch Kid 1ct
+                                    // Product reviews
+                                    .d-flex.justify-content-center.small.text-warning.mb-2
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                    // Product price
+                                    span.text-muted.text-decoration-line-through $0.05
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
+                    .col.mb-5
+                        .card.h-100
+                            // Sale badge
+                            .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
+                            // Product image
+                            img.card-img-top(src='https://media.istockphoto.com/id/825624172/photo/wheat-tortillas-isolated-on-white.jpg?s=612x612&w=0&k=20&c=GTfkS50BU7XwJleQ2GWF0kpRS4h9_9NVMbNaLpO55aw=', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Tortillas 12ct
+                                    // Product price
+                                    span.text-muted.text-decoration-line-through $3.99
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
+                    .col.mb-5
+                        .card.h-100
+                            // Product image
+                            img.card-img-top(src='https://img.freepik.com/premium-photo/watermelon-fruit-with-cut-piece-isolated-white-background_285124-2.jpg', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Watermelon 1ct
+                                    // Product reviews
+                                    .d-flex.justify-content-center.small.text-warning.mb-2
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                    // Product price
+                                    | $4.99
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
+                    .col.mb-5
+                        .card.h-100
+                            // Sale badge
+                            .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
+                            // Product image
+                            img.card-img-top(src='https://i.pinimg.com/736x/c9/d7/25/c9d725d58cf9c518d28b21f4e21f6a0f.jpg', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Eggs 18ct
+                                    // Product price
+                                    span.text-muted.text-decoration-line-through $50.00
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
+                    .col.mb-5
+                        .card.h-100
+                            // Product image
+                            img.card-img-top(src='https://www.hormelfoods.com/wp-content/uploads/Newsroom_20190802_Pumpkin-Spice-SPAM-Can.jpg', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Pumpkin Spice Spam 1ct
+                                    // Product price
+                                    | $4.00
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') View options
+                    .col.mb-5
+                        .card.h-100
+                            // Sale badge
+                            .badge.bg-dark.text-white.position-absolute(style='top: 0.5rem; right: 0.5rem;') Sale
+                            // Product image
+                            img.card-img-top(src='https://doggychef.co.za/wp-content/smush-webp/2024/12/ShutterStock_RealTripe_1200_683-1140x649.png.webp', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Beef Tripe 1ct
+                                    // Product reviews
+                                    .d-flex.justify-content-center.small.text-warning.mb-2
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                    // Product price
+                                    span.text-muted.text-decoration-line-through $20.00
+                                    | $8.50
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
+                    .col.mb-5
+                        .card.h-100
+                            // Product image
+                            img.card-img-top(src='https://nypost.com/wp-content/uploads/sites/2/2025/01/handouts-pizza-flavored-cereal-match-97190581.jpg?quality=75&strip=all&w=1024', alt='...')
+                            // Product details
+                            .card-body.p-4
+                                .text-center
+                                    // Product name
+                                    h5.fw-bolder Totino's Pizza Flavor Cinnamon Toast Crunch 1ct
+                                    // Product reviews
+                                    .d-flex.justify-content-center.small.text-warning.mb-2
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                        .bi-star-fill
+                                    // Product price
+                                    | $15.00
+                            // Product actions
+                            .card-footer.p-4.pt-0.border-top-0.bg-transparent
+                                .text-center
+                                    a.btn.btn-outline-dark.mt-auto(href='#') Add to cart
+<section>
+  <h2>Place Your Order</h2>
+  <form action="#" method="POST">
+    <label for="customerId">Customer ID:</label>
+    <input type="text" id="customerId" name="customerId" required><br>
+    <label for="item">Item:</label>
+    <input type="text" id="item" name="item" required><br>
+    <label for="deliverySlot">Delivery Slot:</label>
+    <input type="text" id="deliverySlot" name="deliverySlot" placeholder="e.g., 10 AM"><br>
+    <label for="instructions">Instructions:</label>
+    <input type="text" id="instructions" name="instructions" placeholder="e.g., Leave at door"><br>
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
+        // Footer
+        footer.py-5.bg-dark
+            .container
+                p.m-0.text-center.text-white Copyright &copy; CapstoneCommerce 2025
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
